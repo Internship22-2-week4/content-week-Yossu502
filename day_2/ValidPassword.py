@@ -7,5 +7,7 @@ def contrasenaValida(password):
 
 
 if __name__ == '__main__':
-  password = input('Introduzca su contraseña por favor: ')
-  print(contrasenaValida(password))
+  print(contrasenaValida("2Fj(jjbFsuj")) # true
+  print(contrasenaValida("eoZiugBf&g9")) # true
+  print(contrasenaValida("hola")) # false
+  print(contrasenaValida(""))

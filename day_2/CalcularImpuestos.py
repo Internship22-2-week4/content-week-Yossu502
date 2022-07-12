@@ -7,7 +7,7 @@ def calcularImpuestos(age, incomes):
 
 
 if __name__ == '__main__':
-  age = int(input('Introduzca su edad por favor: '))
-  incomes = int(input('Introduzca sus ingresos por favor: '))
-  taxes = calcularImpuestos(age, incomes)
-  print(taxes)
+  print(calcularImpuestos(18, 1000)) # 400
+  print(calcularImpuestos(40, 10000)) # 4000
+  print(calcularImpuestos(17, 5000)) # 0
+  print(calcularImpuestos(30, 500)) # 0

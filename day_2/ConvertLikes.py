@@ -1,4 +1,3 @@
-
 def likes(like):
   if len(like) == 3:
     return like
@@ -20,7 +19,6 @@ def likes(like):
   
   elif len(like) >= 9:
     return f'{like[0:3]}M'
-
 
 
 if __name__ == '__main__':
