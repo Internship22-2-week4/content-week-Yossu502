@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Autor Libro</title>
+</head>
+<body>
+  <h1>Auhtor Book: </h1>
+  {% if author %}
+    <p>{{author.first_name}}</p>
+    <p>{{author.last_name}}</p>
+    {% if author.status %}
+      <p>Estado: Activo</p>
+    {% endif %}
+  {% else %}
+    <p>NO HAY DATOS</p>
+  {% endif %}
+</body>
+</html>
