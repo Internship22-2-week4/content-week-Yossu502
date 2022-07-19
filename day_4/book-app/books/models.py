@@ -23,7 +23,7 @@ class Category(models.Model):
   status = models.BooleanField(default=True)
 
   def __str__(self) -> str:
-    return f'{self.name} -- {self.description} -- {self.status}'
+    return f'{self.name}'
 
 
 class Book(models.Model):
