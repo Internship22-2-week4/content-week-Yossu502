@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Post</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      {% for post in posts %}
+      <div class="col-lg-4 offset-lg-4">
+        <div class="media">
+          <img class="mr-3 rounded-circle" src="{{post.user.picture}}" alt="Foto">
+          <div class="media-body">
+            <h5 class="mt-0">{{post.user.name}}</h5>
+            {{post.timestamp}}
+          </div>
+        <img class="img-fluid mt-3 border rounded" src="{{ post.photo }}" alt="Post">
+        <h6 class="ml-2 mt-2">{{ post.title }}</h6>
+        </div>
+      </div>
+      
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>
